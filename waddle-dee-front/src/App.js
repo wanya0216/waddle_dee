@@ -6,7 +6,7 @@ function App() {
 
   // 페이지가 처음 열릴 때 백엔드에 요청을 보냄
   useEffect(() => {
-    fetch('https://automatic-space-eureka-qv7w4xjw447q34prp-5000.app.github.dev/api/waddle') // 백엔드 주소로 요청!
+    fetch('https://waddle-dee.onrender.com/api/waddle') // 백엔드 주소로 요청!
       .then(response => response.json())
       .then(data => {
         // 백엔드가 준 { message: "..." } 에서 message만 쏙 빼서 저장
